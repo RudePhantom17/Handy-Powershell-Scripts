@@ -25,7 +25,7 @@ $Username = Read-Host "Enter Username (i.e - FirstinitialLastName)"
 $ADgroups = Read-Host "Copy AD group membership from which user?"
 $Password = Read-Host "Enter a Password" | ConvertTo-SecureString -AsPlainText -Force
 $Domain = $env:USERDNSDomain
-#$Path = OU=Test,OU=BREComputerSpecialUsernames,DC=bre,DC=co,DC=uk
+#$Path = 
 
 # Creating Displayname, First name, surname, samaccountname, UPN, etc and entering and a password for the user.
  New-ADUser `
