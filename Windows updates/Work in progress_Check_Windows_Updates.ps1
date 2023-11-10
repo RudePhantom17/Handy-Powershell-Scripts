@@ -20,7 +20,7 @@ $Admin = Read-Host "Enter Admin Username"
 
 
 #Process
-Get-HotFix -Id $KB -ComputerName $server -Credential (Get-Credential -Credential  "brent\$Admin")
+Get-HotFix -Id $KB -ComputerName $server -Credential (Get-Credential -Credential  "domain\$Admin")
 
 #-ErrorAction SilentlyContinue -ErrorVariable Problem
 
